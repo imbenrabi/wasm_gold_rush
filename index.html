@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>wasm_gold_rush</title>
+  </head>
+  <body>
+    <script type="module">
+      import init, {greet} from "./pkg/wasm_gold_rush.js";
+      init()
+        .then(() => {
+          greet("imbenrabi!")
+        });
+    </script>
+  </body>
+</html>
