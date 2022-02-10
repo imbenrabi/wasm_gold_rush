@@ -8,7 +8,7 @@
 ## Run it
 
 - Install [wasm-pack](https://rustwasm.github.io/wasm-pack/installer/)
-- Build : '''$ wasm-pack build --target web'''
+- Build : `$ wasm-pack build --target web`
 - Install live server and run it :
-  - '''$ npm i -D live-server'''
-  - '''$ npx live-server'''
+  - `$ npm i -D live-server`
+  - `$ npx live-server`
