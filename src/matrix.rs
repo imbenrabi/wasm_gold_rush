@@ -1,19 +1,22 @@
 pub mod matrix {
+    #[derive(Debug)]
     pub struct Matrix {
-        columns: i32,
-        rows: i32,
-        data: Vec<i32>,
+        columns: usize,
+        rows: usize,
+        data: Vec<Vec<usize>>,
     }
     
     impl Matrix {
-        fn new(columns: i32, rows: i32) -> Matrix {
+        fn new(columns: usize, rows: usize) -> Matrix {
             Matrix {
-                columns: columns, rows: rows, data: vec![0, columns * rows] 
+                columns: columns,
+                rows: rows,
+                data: vec![vec![0; columns]; rows]
             }
         }
     }
 
-    pub fn generate_new_board(cols: i32, rows: i32) -> Matrix {
+    pub fn generate_new_board(cols: usize, rows: usize) -> Matrix {
         Matrix::new(cols, rows)
     }
 }

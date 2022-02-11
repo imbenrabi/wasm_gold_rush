@@ -10,11 +10,3 @@ extern {
 pub fn greet(name: &str) {
     alert(&format!("Hello, {}!", name));
 }   
-
-// #[cfg(test)]
-// mod tests {
-//     #[test]
-//     fn testing() {
-//         assert_eq!(2 + 2, 4);
-//     }
-// }
