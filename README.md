@@ -5,10 +5,22 @@
 - Two player game to get as much gold as possible.
 - Built with Rust and Typescript.
 
-## Run it
+## Installation
 
-- Install [wasm-pack](https://rustwasm.github.io/wasm-pack/installer/)
-- Build : `$ wasm-pack build --target web`
-- Install live server and run it :
-  - `$ npm i -D live-server`
-  - `$ npx live-server`
+```sh
+yarn
+```
+
+## Starting a dev server
+
+```sh
+yarn start
+```
+
+Will watch both Typescript and Rust
+
+## Building for production
+
+```sh
+yarn build
+```
