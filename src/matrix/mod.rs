@@ -1,9 +1,12 @@
 pub mod matrix {
+    pub type Board = Vec<Vec<usize>>;
+    
+    
     #[derive(Debug)]
     pub struct Matrix {
         columns: usize,
         rows: usize,
-        data: Vec<Vec<usize>>,
+        data: Board,
     }
     
     impl Matrix {
@@ -14,6 +17,10 @@ pub mod matrix {
                 data: vec![vec![0; columns]; rows]
             }
         }
+
+        fn get(&self) -> &Matrix {
+            self
+        }
     }
 
     pub fn create_new_board(cols: usize, rows: usize) -> Matrix {
@@ -21,6 +28,6 @@ pub mod matrix {
     }
 
     pub fn print_matrix(matrix: Matrix) {
-        println!("{:?}", matrix);
+        println!("{:?}", matrix.get());
     }
 }
