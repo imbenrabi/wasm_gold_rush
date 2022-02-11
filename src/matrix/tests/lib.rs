@@ -1,7 +1,6 @@
-use matrix;
-
 #[cfg(test)]
-mod tests {
+mod matrix_tests {
+    use super::super::matrix;
     #[test]
     fn should_return_new_board() {
         let value = vec![vec![0; 3]; 3]

@@ -1,5 +1,5 @@
 use wasm_bindgen::prelude::*;
-pub mod matrix;
+mod matrix;
 
 #[wasm_bindgen]
 extern {
