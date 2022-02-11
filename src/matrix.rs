@@ -16,7 +16,11 @@ pub mod matrix {
         }
     }
 
-    pub fn generate_new_board(cols: usize, rows: usize) -> Matrix {
+    pub fn create_new_board(cols: usize, rows: usize) -> Matrix {
         Matrix::new(cols, rows)
+    }
+
+    pub fn print_matrix(matrix: Matrix) {
+        println!("{:?}", matrix);
     }
 }
