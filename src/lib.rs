@@ -1,4 +1,5 @@
 use wasm_bindgen::prelude::*;
+pub mod matrix;
 
 #[wasm_bindgen]
 extern {
@@ -10,10 +11,10 @@ pub fn greet(name: &str) {
     alert(&format!("Hello, {}!", name));
 }   
 
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn testing() {
-        assert_eq!(2 + 2, 4);
-    }
-}
+// #[cfg(test)]
+// mod tests {
+//     #[test]
+//     fn testing() {
+//         assert_eq!(2 + 2, 4);
+//     }
+// }
