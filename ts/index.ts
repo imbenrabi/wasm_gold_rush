@@ -1,10 +1,6 @@
-import init, { greet } from '../pkg/wasm_gold_rush';
+const createWASMAPI = () => import('../pkg');
 
-init()
-  .then(function () {
-    greet('Welcome to Gold rush!');
-  })
-  .catch((error) => {
-    // eslint-disable-next-line no-console
-    console.error(error);
-  });
+(async function main() {
+  const { greet } = await createWASMAPI();
+  greet('It is working!');
+})();
