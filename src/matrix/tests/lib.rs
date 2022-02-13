@@ -4,8 +4,8 @@ mod matrix_tests {
     #[test]
     fn should_get_new_board() {
         let value = vec![vec![0; 3]; 3];
-        let board = matrix::generate_new_board(3, 3);
-        matrix::print_board(board);
+        let board = matrix::create_new_matrix(3, 3);
+        matrix::print_matrix(board);
         assert_eq!(board, value);
     }
 }
