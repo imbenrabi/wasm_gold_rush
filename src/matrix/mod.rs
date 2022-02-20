@@ -1,13 +1,10 @@
 pub mod matrix {
     use std::cell::Cell;
-    use wasm_bindgen::prelude::*;
-    
     
     pub type Point = Cell<u32>;
     pub type MatrixData = Vec<Vec<Point>>;
 
     #[derive(Debug)]
-    #[wasm_bindgen]
     pub struct Matrix  {      
         data: MatrixData,
     }
