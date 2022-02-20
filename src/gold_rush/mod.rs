@@ -8,7 +8,7 @@ pub mod gold_rush {
     pub type Position = (Cell<u32>,Cell<u32>);
     pub struct BoardProperty {
         amount: u8,
-        positions:  Array<Position>
+        positions:  Vec<Position>
     }
 
     pub struct Player {
