@@ -56,7 +56,8 @@ pub mod gold_rush {
         rows: u32,
         player_1: Player,
         player_2: Player,
-        properties: BoardProperties
+        properties: BoardProperties,
+        board: matrix::Matrix,
     }
 
     impl GoldRush {
@@ -65,12 +66,14 @@ pub mod gold_rush {
             let _player_1 = Player::new(false, cols, rows);
             let _player_2 = Player::new(true, cols, rows);
 
+            // TODO add the matrix as with updated properties positions
             GoldRush {
                 columns: cols,
                 rows: rows,
                 player_1: _player_1,
                 player_2: _player_2,
-                properties: BoardProperties::new(cols*rows)
+                properties: BoardProperties::new(cols * rows),
+                board: _matrix,
             }
         }
     }

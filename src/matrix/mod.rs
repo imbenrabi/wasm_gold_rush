@@ -46,6 +46,7 @@ pub mod matrix {
     fn should_get_new_board() {
         let value: MatrixData = vec![vec![Cell::new(0); 3]; 3];
         let board = create_new_matrix(3, 3);
+        println!("{:?}", board.view());
         assert_eq!(&board.data, &value);
     }
 }
