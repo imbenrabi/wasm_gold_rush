@@ -11,7 +11,7 @@ pub fn greet(name: &str) {
     alert(&format!("Hello, {}!", name));
 }
 
-#[wasm_bindgen]
+
 pub fn get_new_board(cols:usize, rows: usize) ->  matrix::matrix::Matrix {
     let matrix = matrix::matrix::create_new_matrix(cols, rows);
     return matrix;

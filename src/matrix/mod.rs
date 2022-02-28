@@ -25,7 +25,8 @@ pub mod matrix {
         fn set_point(&self, x:usize, y:usize, value: u32) {
             let _value = Cell::new(value); 
             let mut point = &self.data[x][y];
-            point = &_value; 
+            point = &_value
+            
         }
 
         fn view(&self) -> &MatrixData {
