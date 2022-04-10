@@ -1,5 +1,6 @@
 use wasm_bindgen::prelude::*;
 mod matrix;
+mod gold_rush;
 
 #[wasm_bindgen]
 extern {
